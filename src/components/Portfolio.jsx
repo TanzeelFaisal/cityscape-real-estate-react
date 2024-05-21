@@ -14,8 +14,6 @@ import { portfolios } from '../data/HomeOneData/HomeOneData';
     pauseOnHover: true,
     arrows: false,
     centerMode: true,
-    prevArrow: '<button type="button" className="slick-prev"><i className="fas fa-long-arrow-alt-left"></i></button>',
-    nextArrow: '<button type="button" className="slick-next"><i className="fas fa-long-arrow-alt-right"></i></button>',
     responsive: [
         {
           breakpoint: 991,
@@ -29,10 +27,13 @@ import { portfolios } from '../data/HomeOneData/HomeOneData';
             slidesToShow: 1
           }
         }
-      ]
+    ]
   };
   
 const Portfolio = () => {
+
+    const slider = React.useRef(null);
+  
     return (
         <>
             <section className="portfolio padding-t-120 padding-b-60 overflow-hidden">
@@ -41,7 +42,7 @@ const Portfolio = () => {
                     <h2 className="section-heading__title">Optimum Homes & Properties Realty Experts</h2>
                 </div>
                 <div className="portfolio-wrapper">
-                    <Slider {...settings}>
+                    <Slider {...settings}  ref={slider}>
                         {
                             portfolios.map((portfolio, index) => {
                                 return (
@@ -50,6 +51,8 @@ const Portfolio = () => {
                             })
                         }
                     </Slider>
+                    <button onClick={() => slider?.current?.slickPrev()}>Prev</button>
+                    <button onClick={() => slider?.current?.slickNext()}>Next</button>
                 </div>
             </section>
         </>

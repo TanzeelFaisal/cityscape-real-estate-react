@@ -14,10 +14,12 @@ import FooterTwo from './../common/FooterTwo';
 import Message from './../components/Message';
 import MobileMenu from '../common/MobileMenu';
 import OffCanvas from '../common/OffCanvas';
+import PageTitle from '../common/PageTitle';
 
 const HomeOne = () => {
     return (
         <>
+         <PageTitle title="CityScape - Home Page" />
             <OffCanvas/>
             <MobileMenu/>
             

@@ -15,11 +15,12 @@ var settings = {
     pauseOnHover: true,
     arrows: true,
     centerMode: true,
-    prevArrow: <button type="button" className="slick-prev"><i className="fas fa-arrow-left"></i></button>,
-    nextArrow: <button type="button" className="slick-next"><i className="fas fa-arrow-right"></i></button>,
 };
 
 const TestimonialThree = () => {
+    
+    const slider = React.useRef(null);
+    
     return (
         <>
         <section className="testimonials-three padding-y-120">
@@ -47,7 +48,7 @@ const TestimonialThree = () => {
 
                         <div className="col-lg-7">
                             <div className="testimonials-three__wrapper overflow-hidden">
-                                <Slider {...settings}>
+                                <Slider {...settings} ref={slider}>
                                     {
                                         testimonialThreeContents.map((testimonialThreeItem, testimonialThreeItemIndex) => {
                                             return (
@@ -56,6 +57,8 @@ const TestimonialThree = () => {
                                         })
                                     }
                                 </Slider>
+                                <button onClick={() => slider?.current?.slickPrev()}>Prev</button>
+                    <button onClick={() => slider?.current?.slickNext()}>Next</button>
                             </div>
                         </div>
                     </div>

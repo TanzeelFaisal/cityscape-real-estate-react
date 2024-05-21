@@ -18,11 +18,12 @@ var settings = {
     draggable: true,
     speed: 900,
     infinite: true,
-    prevArrow: <button type="button" className="slick-prev"><i className="fas fa-arrow-left"></i></button>,
-    nextArrow: <button type="button" className="slick-next"><i className="fas fa-arrow-right"></i></button>,
 };
 
 const Testimonial = () => {
+
+    const slider = React.useRef(null);
+
     return (
         <>
             {/* ==================== Testimonials Section Start ==================== */}
@@ -46,7 +47,7 @@ const Testimonial = () => {
                         <div className="row">
                             <div className="col-lg-6 col-md-8">
                                 <div className="testimonial-box overflow-hidden position-relative">
-                                    <Slider {...settings}>
+                                    <Slider {...settings} ref={slider}>
                                         {
                                             testimonials.map((testimonial, index) => {
                                                 return (
@@ -55,6 +56,8 @@ const Testimonial = () => {
                                             })
                                         }
                                     </Slider>
+                                    <button onClick={() => slider?.current?.slickPrev()}>Prev</button>
+                                    <button onClick={() => slider?.current?.slickNext()}>Next</button>
                                 </div>
                             </div>
 
