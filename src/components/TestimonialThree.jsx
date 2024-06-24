@@ -18,7 +18,7 @@ var settings = {
 };
 
 const TestimonialThree = () => {
-    
+
     const slider = React.useRef(null);
     
     return (
@@ -57,8 +57,12 @@ const TestimonialThree = () => {
                                         })
                                     }
                                 </Slider>
-                                <button onClick={() => slider?.current?.slickPrev()}>Prev</button>
-                    <button onClick={() => slider?.current?.slickNext()}>Next</button>
+                                <button className='slick-arrow slick-prev' onClick={() => slider?.current?.slickPrev()}> 
+                                    <i className="fas fa-arrow-left"></i> 
+                                </button>
+                                <button className='slick-arrow slick-next' onClick={() => slider?.current?.slickNext()}> 
+                                    <i className="fas fa-arrow-right"></i> 
+                                </button>
                             </div>
                         </div>
                     </div>

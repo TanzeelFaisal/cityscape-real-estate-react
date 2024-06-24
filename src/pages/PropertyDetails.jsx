@@ -4,12 +4,15 @@ import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
 import Cta from '../components/Cta';
 import PropertyDetailsSection from '../components/PropertyDetailsSection';
-import { useParams } from 'react-router-dom';
+import ContactUsSection from '../components/ContactUsSection';
+import { useParams, useLocation } from 'react-router-dom';
 import PageTitle from '../common/PageTitle';
 
 const PropertyDetails = () => {
 
-    const {title} = useParams(); 
+    const {title} = useParams();
+    const {dataStatuses} = useLocation().state;
+    console.log(dataStatuses)
     
     return (
         <>
@@ -32,13 +35,16 @@ const PropertyDetails = () => {
             />
 
             {/* BreadCrumb */}
-            <Breadcrumb 
+            {/* <Breadcrumb 
                 pageTitle="Property Details"
                 pageName={title}
-            />
+            /> */}
 
             {/* Property Details Section */}
             <PropertyDetailsSection/>
+
+            {/* Contact */}
+            <ContactUsSection dataStatuses={dataStatuses}/>
 
             {/* Cta */}
             <Cta ctaClass=""/>

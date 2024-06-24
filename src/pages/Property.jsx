@@ -30,10 +30,10 @@ const Property = () => {
             />
 
             {/* BreadCrumb */}
-            <Breadcrumb 
+            {/* <Breadcrumb 
                 pageTitle="Property"
                 pageName="Property"
-            />
+            /> */}
 
             {/* Property Page Section */}
             <PropertyPageSection/>

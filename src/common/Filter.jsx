@@ -65,10 +65,10 @@ const Filter = (props) => {
                             <div className="select-has-icon icon-black">
 
                                 <select className="select common-input" value={dataType} onChange={handleDataTypeChange}>
-                                    <option value="Type" disabled defaultValue>Type</option>
+                                    <option value="Type" disabled>Type</option>
                                     <option value="All">All</option>
                                     <option value="Houses">Houses</option>
-                                    <option value="Apartments">Apartments</option>
+                                    <option value="Apartments" defaultValue>Apartments</option>
                                     <option value="Office">Office</option>
                                     <option value="Villa">Villa</option>
                                 </select>
@@ -79,12 +79,13 @@ const Filter = (props) => {
                                 <select className="select common-input" value={dataLocation} onChange={handleDataLocationChange}>
                                     <option value="Location" disabled defaultValue>Location</option>
                                     <option value="All"> Country</option>
-                                    <option value="Bangladesh" data-location="Bangladesh">Bangladesh</option>
+                                    {/* <option value="Bangladesh" data-location="Bangladesh">Bangladesh</option>
                                     <option value="Japan" data-location="Japan">Japan</option>
                                     <option value="Korea" data-location="Korea">Korea</option>
                                     <option value="Singapore" data-location="Singapore">Singapore</option>
                                     <option value="Germany" data-location="Germany">Germany</option>
-                                    <option value="Thailand" data-location="Thailand">Thailand</option>
+                                    <option value="Thailand" data-location="Thailand">Thailand</option> */}
+                                    <option value="Shengjin" data-location="Shengjin">Shëngjin, Albania</option>
                                 </select>
                             </div>
                         </div>

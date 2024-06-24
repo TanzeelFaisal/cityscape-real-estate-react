@@ -35,7 +35,7 @@ const PropertyItem = ({ property, itemClass, iconsClass, btnClass, badgeText, ba
                 datasort={dataSort}
             >
                 <div className="property-item__thumb">
-                    <Link to={propertyURL} state={{ thumb, title, desc, price}} className="link">
+                    <Link to={propertyURL} state={{ thumb, title, desc, price, dataStatuses}} className="link">
                         <img src={thumb} alt="" className="cover-img"/>
                     </Link> 
                     {
@@ -49,7 +49,7 @@ const PropertyItem = ({ property, itemClass, iconsClass, btnClass, badgeText, ba
                         <span className="day">{day}</span> 
                     </h6>
                     <h6 className="property-item__title"> 
-                        <Link to={propertyURL} state={{ thumb, title, desc, price}} className="link">{title}</Link> 
+                        <Link to={propertyURL} state={{ thumb, title, desc, price, dataStatuses}} className="link">{title}</Link> 
                     </h6>
                     <p className="property-item__location d-flex gap-2"> 
                         <span className={`icon ${iconsClass}`}> {locationIcon}</span>
@@ -70,7 +70,7 @@ const PropertyItem = ({ property, itemClass, iconsClass, btnClass, badgeText, ba
                         </ul>
                         {
                             btnRenderRight && (
-                                <Link to={propertyURL} state={{ thumb, title, desc, price}} className={`simple-btn ${btnClass}`}>
+                                <Link to={propertyURL} state={{ thumb, title, desc, price, dataStatuses}} className={`simple-btn ${btnClass}`}>
                                     {btnText}
                                     <span className="icon-right"> <i className="fas fa-arrow-right"></i> </span> 
                                 </Link>
@@ -81,7 +81,7 @@ const PropertyItem = ({ property, itemClass, iconsClass, btnClass, badgeText, ba
                     {
                         btnRenderBottom &&
                         (
-                            <Link to={propertyURL} state={{ thumb, title, desc, price}} className={`simple-btn ${btnClass}`}>
+                            <Link to={propertyURL} state={{ thumb, title, desc, price, dataStatuses}} className={`simple-btn ${btnClass}`}>
                                 {btnText}
                                 <span className="icon-right"> <i className="fas fa-arrow-right"></i> </span> 
                             </Link>

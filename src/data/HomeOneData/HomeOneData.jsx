@@ -14,7 +14,7 @@ export const bannerContent = {
 export const filterTabs = [
     {
         id: 1,
-        text: 'Rent'
+        text: 'All'
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ export const filterTabs = [
     },
     {
         id: 3,
-        text: 'Sell'
+        text: 'Rent'
     },
 ]
   

@@ -85,75 +85,79 @@ export const topHeaderInfos = [
 export const navMenus = [
     {
       text: "Home",
-      path: "#",
-      submenus: [
-        {
-            text: "Home One",
-            path: "/",
-        },
-        {
-            text: "Home Two",
-            path: "/home-two",
-        },
-        {
-            text: "Home Three",
-            path: "/home-three",
-        },
-      ],
+      path: "/",
+    //   submenus: [
+    //     {
+    //         text: "Home One",
+    //         path: "/",
+    //     },
+    //     {
+    //         text: "Home Two",
+    //         path: "/home-two",
+    //     },
+    //     {
+    //         text: "Home Three",
+    //         path: "/home-three",
+    //     },
+    //   ],
     },
     {
-      text: "Pages",
-      path: "#",
-      submenus: [
-        {
-            text: "Property",
-            path: "/property",
-        },
-        {
-            text: "Property Sidebar",
-            path: "/property-sidebar",
-        },
-        {
-            text: "Add New Listing",
-            path: "/add-new-listing",
-        },
-        {
-            text: "Map Location",
-            path: "/map-location",
-        },
-        {
-            text: "About Us",
-            path: "/about-us",
-        },
-        {
-            text: "Faq",
-            path: "/faq",
-        },
-        {
-            text: "Cart",
-            path: "/cart",
-        },
-        {
-            text: "Checkout",
-            path: "/checkout",
-        },
-        {
-            text: "Login",
-            path: "/login",
-        },
-        {
-            text: "Account",
-            path: "/account",
-        }
-      ],
+        text: "Property",
+        path: "/property",
     },
-    {
-      text: "Project",
-      path: "/project",
-    },
+    // {
+    //   text: "Pages",
+    //   path: "#",
+    //   submenus: [
+    //     // {
+    //     //     text: "Property",
+    //     //     path: "/property",
+    //     // },
+    //     {
+    //         text: "Property Sidebar",
+    //         path: "/property-sidebar",
+    //     },
+    //     {
+    //         text: "Add New Listing",
+    //         path: "/add-new-listing",
+    //     },
+    //     {
+    //         text: "Map Location",
+    //         path: "/map-location",
+    //     },
+    //     {
+    //         text: "Faq",
+    //         path: "/faq",
+    //     },
+    //     {
+    //         text: "Cart",
+    //         path: "/cart",
+    //     },
+    //     {
+    //         text: "Checkout",
+    //         path: "/checkout",
+    //     },
+    //     {
+    //         text: "Login",
+    //         path: "/login",
+    //     },
+    //     {
+    //         text: "Account",
+    //         path: "/account",
+    //     }
+    //   ],
+    // },
+    // {
+    //   text: "Project",
+    //   path: "/project",
+    // },
     {
       text: "Blog",
       path: "/blog"
+    },
+    {
+        text: "About Us",
+        path: "/about-us",
     },
     {
       text: "Contact",

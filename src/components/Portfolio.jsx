@@ -51,8 +51,8 @@ const Portfolio = () => {
                             })
                         }
                     </Slider>
-                    <button onClick={() => slider?.current?.slickPrev()}>Prev</button>
-                    <button onClick={() => slider?.current?.slickNext()}>Next</button>
+                    <button className='d-none' onClick={() => slider?.current?.slickPrev()}>Prev</button>
+                    <button className='d-none' onClick={() => slider?.current?.slickNext()}>Next</button>
                 </div>
             </section>
         </>

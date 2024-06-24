@@ -12,7 +12,7 @@ const PropertyFilterProvider = ({ children }) => {
     }
 
     // Filter By Type Code Here
-    const [dataType, setDataType] = useState("All");
+    const [dataType, setDataType] = useState("Apartments");
 
     const handleDataTypeChange = (event) => {
         setDataType(event.target.value)

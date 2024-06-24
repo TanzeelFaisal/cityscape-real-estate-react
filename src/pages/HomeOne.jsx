@@ -25,21 +25,18 @@ const HomeOne = () => {
             
             <main className="body-bg">
 
-                {/* Top header */}
-                <TopHeader/>
-
                 {/* Header */}
                 <Header 
                     headerClass="" 
                     logoBlack={true}
                     logoWhite={false}
-                    headerMenusClass=""
+                    headerMenusClass="mx-auto"
                     btnClass="btn btn-outline-light d-lg-block d-none"
                     btnLink="/property"
                     btnText="Sell Property"
                     spanClass="icon-right text-gradient" 
-                    showHeaderBtn={true}
-                    showOffCanvasBtn={true}
+                    showHeaderBtn={false}
+                    showOffCanvasBtn={false}
                     offCanvasBtnClass=""
                     showContactNumber={false}
                 />
@@ -51,7 +48,7 @@ const HomeOne = () => {
                 <About/>
 
                 {/* Property */}
-                <Property/>
+                {/* <Property/> */}
 
                 {/* Property Type */}
                 <PropertyType/>
@@ -66,10 +63,10 @@ const HomeOne = () => {
                 <Message/>
 
                 {/* Portfolio */}
-                <Portfolio/>
+                {/* <Portfolio/> */}
 
                 {/* Testimonial */}
-                <Testimonial/>
+                {/* <Testimonial/> */}
 
                 {/* Blog */}
                 <Blog/>

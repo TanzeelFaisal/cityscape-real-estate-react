@@ -29,14 +29,14 @@ const AboutUs = () => {
             />
 
             {/* BreadCrumb */}
-            <Breadcrumb 
+            {/* <Breadcrumb 
                 pageTitle="About Us"
                 pageName="About Us"
-            />
+            /> */}
 
             <AboutThree/>    
 
-            <Team/>
+            {/* <Team/> */}
 
             <PropertyTypeThree/> 
 
