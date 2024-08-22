@@ -9,29 +9,30 @@ import PageTitle from '../common/PageTitle';
 const BlogClassic = () => {
     return (
         <>
-        <PageTitle title="CityScape - Blog Classic" />
+        <PageTitle title="Anila Apartments - Blog Classic" />
 
             {/* Header */}
+            {/* Header */}
             <Header 
-                headerClass="dark-header has-border" 
-                logoBlack={false}
-                logoWhite={true}
+                headerClass="" 
+                logoBlack={true}
+                logoWhite={false}
                 headerMenusClass="mx-auto"
-                btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
+                btnClass="btn btn-outline-main btn-outline-main-light d-lg-block d-none"
                 btnLink="/add-new-listing"
                 btnText="Add Listing"
                 spanClass="icon-right text-gradient" 
-                showHeaderBtn={true}
+                showHeaderBtn={false}
                 showOffCanvasBtn={false}
                 offCanvasBtnClass=""
                 showContactNumber={false}
             />
 
             {/* BreadCrumb */}
-            <Breadcrumb 
+            {/* <Breadcrumb 
                 pageTitle="Blog Classic"
                 pageName="Blog Classic"
-            />
+            /> */}
 
             <BlogClassicSection/> 
 

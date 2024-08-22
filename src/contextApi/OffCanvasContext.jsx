@@ -1,25 +1,26 @@
 import React, { createContext, useState } from 'react';
 
-export const OffCanvasContext = createContext(); 
+export const OffCanvasContext = createContext();
 
 const OffCanvasProvider = ({ children }) => {
-
-    const [offCanvas, setOffCanvas] = useState(false); 
+    const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(false);
 
     const handleOffCanvas = () => {
-        setOffCanvas(!offCanvas)
-    }
-    
+        console.log('OffCanvas toggled');
+        setIsOffCanvasOpen(!isOffCanvasOpen);
+    };
+
     const handleOffCanvasClose = () => {
-        setOffCanvas(false)
-    }
-    
+        console.log('OffCanvas closed');
+        setIsOffCanvasOpen(false);
+    };
+
+    console.log({ isOffCanvasOpen, handleOffCanvas, handleOffCanvasClose });
+
     return (
-        <>
-            <OffCanvasContext.Provider value={{ offCanvas, handleOffCanvas, handleOffCanvasClose }}>
-                { children }
-            </OffCanvasContext.Provider>
-        </>
+        <OffCanvasContext.Provider value={{ isOffCanvasOpen, handleOffCanvas, handleOffCanvasClose }}>
+            {children}
+        </OffCanvasContext.Provider>
     );
 };
 

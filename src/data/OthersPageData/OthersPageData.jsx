@@ -128,33 +128,19 @@ export const propertyDetailsAmenities = [
     {
         icon: amenitiesIcon1,
         text: "Room", 
-        title: "4 Room"  
+        title: "2 Room"  
     },
     {
         icon: amenitiesIcon2,
         text: "Bed", 
-        title: "3 Beds"  
+        title: "1 Beds"  
     },
     {
         icon: amenitiesIcon3,
         text: "Bath", 
-        title: "2 Baths"  
+        title: "1 Baths"  
     },
-    {
-        icon: amenitiesIcon4,
-        text: "Space", 
-        title: "3 Space"  
-    },
-    {
-        icon: amenitiesIcon5,
-        text: "Size", 
-        title: "1020 sqft"  
-    },
-    {
-        icon: amenitiesIcon6,
-        text: " Property Type ", 
-        title: "Apartment"  
-    },
+   
 ]
 
 export const featureLists = [
@@ -172,7 +158,7 @@ export const featureLists = [
     },
     {
         icon: <i className="fas fa-check"></i>,
-        text: 'Global Real Estate Investments'
+        text: 'Global Investments'
     },
     {
         icon: <i className="fas fa-check"></i>,
@@ -187,11 +173,11 @@ export const featureLists = [
 export const addressContents = [
     {
         text: 'Address',
-        title: 'Mirpur 1,Chineese'
+        title: 'Shëngjin, Albania'
     },
     {
         text: 'Code',
-        title: '2365'
+        title: '10000'
     }
 ]
 
@@ -1077,21 +1063,20 @@ export const contactTopInfos = [
     {
         icon: <i className="fas fa-paper-plane"></i>,
         title: 'Email',
-        textOne: 'michelle.rivera@example.com',
-        textTwo: 'cityscape@example.com',
-        link: 'mailto:'
+        textOne: 'anilaapartments@gmail.com',
+        link: 'mailto:anilaapartments@gmail.com'
     },
     {
         icon: <i className="fas fa-map-marker-alt"></i>,
         title: 'Location',
-        text: '8502 Preston Rd. Inglewood, Maine 98380',
+        text: <a href="https://maps.app.goo.gl/HaijfkBMsFHgoqsb6" target="_blank" rel="noopener noreferrer"> Shëngjin, Albania</a>,
     },
     {
         icon: <i className="fas fa-phone"></i>,
         title: 'Contacts ',
-        textOne: '(270) 555-0117',
-        textTwo: '(557) 284-3641 ',
-        link: 'tel:'
+        textOne: '+383 44 530 007',
+    
+        link: 'tel:+383 44 530 007'
     },
 ]
 // ========================= Project Page Data End =========================

@@ -1,121 +1,149 @@
-import React, { useRef, useState } from 'react';
-
+import React, { useRef, useEffect } from 'react';
+import { toSingular } from '../utility/Utility';
+import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
-import emailjs from '@emailjs/browser';
 
 const ContactUsSection = (props) => {
-
     const form = useRef();
+    const startDateRef = useRef(null);
+    const endDateRef = useRef(null);
+    const messageRef = useRef(null);
+    const subjectRef = useRef(null);
 
-    const [startDate, setStartDate] = useState(null);
-    const [endDate, setEndDate] = useState(null);
-    const [message, setMessage] = useState('');
+    useEffect(() => {
+        updateMessage();
+    }, [props.property_data?.dataStatuses]);
 
-    const handleStartDateChange = (event) => {
-        setStartDate(event.target.value);
-        updateMessage(event.target.value, endDate);
-    };
+    const updateMessage = () => {
+        const dataStatuses = props.property_data?.dataStatuses || '';
+        const dataTypes = props.property_data?.dataTypes || '';
+        const location = props.property_data?.location || '';
+        const start = startDateRef.current ? startDateRef.current.value : null;
+        const end = endDateRef.current ? endDateRef.current.value : null;
 
-    const handleEndDateChange = (event) => {
-        setEndDate(event.target.value);
-        updateMessage(startDate, event.target.value);
-    };
-
-    const updateMessage = (start, end) => {
-        if (start && end) {
-            setMessage(`I wish to rent this place from ${start} to ${end}`);
-        } else {
-            setMessage('');
+        let message = '';
+        if (dataStatuses === "Rent" && start && end) {
+            message = `I am interested in ${dataStatuses}ing an ${toSingular(dataTypes)} at ${location} from ${start} to ${end}.`;
+            messageRef.current.disabled = false;
+        } else if (dataStatuses === "Buy") {
+            message = `I am interested in ${dataStatuses}ing an ${toSingular(dataTypes)} at ${location}.`;
+        }
+        if (messageRef.current) {
+            messageRef.current.value = message;
         }
     };
 
     const sendEmail = (e) => {
-      e.preventDefault();
-    //   Please se documentation for more information
-  
-      emailjs
-        .sendForm(
-            'service_5opdqb8', // YOUR_SERVICE_ID
-            'template_tel2xio', // YOUR_TEMPLATE_ID
-            form.current, {
-            publicKey: 'TkEXMnREcdrQyndFz', // YOUR_PUBLIC_KEY
-        })
-        .then(
-          () => {
-            form.current.reset();
-            toast.success("Congratulations! You Have Submitted Successfully.", {
-                theme: "colored",
-            });
-            console.log('SUCCESS!');
-          },
-          (error) => {
-            toast.error("Something went wrong! Your message didn't sent.", {
-                theme: "colored",
-            });
-            console.log('FAILED...', error.text);
-          },
+        e.preventDefault();
+        emailjs.sendForm(
+            'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+            'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+            form.current,
+            'YOUR_USER_ID' // Replace with your EmailJS user ID
+        ).then(
+            () => {
+                form.current.reset();
+                toast.success("Congratulations! You Have Submitted Successfully.", {
+                    theme: "colored",
+                });
+                console.log('SUCCESS!');
+            },
+            (error) => {
+                toast.error("Something went wrong! Your message didn't sent.", {
+                    theme: "colored",
+                });
+                console.log('FAILED...', error);
+            }
         );
     };
-    
+
+    const sendAxiosRequest = (e) => {
+        e.preventDefault();
+        const formData = new FormData(form.current);
+
+        if (props.property_data?.dataStatuses) { formData.append('user_subject', props.property_data?.dataStatuses || ''); }
+
+        const axiosConfig = {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        };
+
+        axios.post('http://api.anilaapartments.com/contact', formData, axiosConfig)
+            .then(response => {
+                console.log(response.data);
+                toast.success("Query received successfully.", {
+                    theme: "colored",
+                });
+                form.current.reset();
+                updateMessage();
+                if(props.property_data?.dataStatuses === "Rent") messageRef.current.disabled = true
+            })
+
+            .catch(error => {
+                console.error('Error sending email:', error);
+                toast.error("Error generating query.", {
+                    theme: "colored",
+                });
+            });
+    };
+
     return (
         <>
-            <ToastContainer/>
+            <ToastContainer />
             <section className="contact-us-section padding-b-120">
                 <div className="container container-two">
-                    <div className="contact-form bg-white">  
+                    <div className="contact-form bg-white">
                         <div className="section-heading">
-                            <span className="section-heading__subtitle bg-gray-100"> 
+                            <span className="section-heading__subtitle bg-gray-100">
                                 <span className="text-gradient fw-semibold">Contact us</span>
                             </span>
-                            <h2 className="section-heading__title">Do you have any question? </h2>
-                            <p className="section-heading__desc">For your car we will do everything  advice, repairs and maintenance. We are the some preferred choice by many car owners because</p>
+                            <h2 className="section-heading__title">Booking Now </h2>
+                            
                         </div>
                         <div className="contact-form__form">
-
-                            <form ref={form} onSubmit={sendEmail} className="contact-form__form">
+                            <form ref={form} onSubmit={sendAxiosRequest} className="contact-form__form">
                                 <div className="row gy-4">
                                     <div className="col-sm-6 col-xs-6">
-                                        { props.dataStatuses && <span>Name</span> }
-                                        <input type="text" className="common-input" name='user_name' placeholder="Your Name"/>
+                                        {props.property_data?.dataStatuses && <span>Name</span>}
+                                        <input type="text" className="common-input" name='user_name' placeholder="Your Name" />
                                     </div>
                                     <div className="col-sm-6 col-xs-6">
-                                        { props.dataStatuses && <span>Email</span> }
-                                        <input type="email" className="common-input" name='user_email' placeholder="Your E-mail"/>
+                                        {props.property_data?.dataStatuses && <span>Email</span>}
+                                        <input type="email" className="common-input" name='user_email' placeholder="Your E-mail" />
                                     </div>
                                     <div className="col-sm-6 col-xs-6">
-                                        { props.dataStatuses && <span>Phone</span> }
-                                        <input type="tel" className="common-input" name='user_phone' placeholder="Phone Number"/>
+                                        {props.property_data?.dataStatuses && <span>Phone</span>}
+                                        <input type="tel" className="common-input" name='user_phone' placeholder="Phone Number" />
                                     </div>
                                     <div className="col-sm-6 col-xs-6">
-                                        { props.dataStatuses && <span>Subject</span> }
-                                        <input type="text" className="common-input" name='user_subject' placeholder="Subject" value={ props.dataStatuses ? props.dataStatuses : "" } disabled={ props.dataStatuses ? true : false }/>
+                                        {props.property_data?.dataStatuses && <span>Subject</span>}
+                                        <input type="text" className="common-input" name='user_subject' placeholder="Subject" value={props.property_data?.dataStatuses} disabled={props.property_data?.dataStatuses ? true : false} />
                                     </div>
-                                    {props.dataStatuses === "Rent" && (
+                                    {props.property_data?.dataStatuses === "Rent" && (
                                         <>
                                             <div className="col-sm-6 col-xs-6">
                                                 <span>From</span>
-                                                <input type="date" className="common-input" name="start_date" onChange={handleStartDateChange} />
+                                                <input type="date" className="common-input" ref={startDateRef} onChange={updateMessage} />
                                             </div>
                                             <div className="col-sm-6 col-xs-6">
                                                 <span>To</span>
-                                                <input type="date" className="common-input" name="end_date" onChange={handleEndDateChange} />
+                                                <input type="date" className="common-input" ref={endDateRef} onChange={updateMessage} />
                                             </div>
                                         </>
                                     )}
                                     <div className="col-12">
-                                        <textarea className="common-input" name='message' placeholder="Your Message" value={message} onChange={(e) => setMessage(e.target.value)} disabled={props.dataStatuses === "Rent" && (!startDate || !endDate)}></textarea>
+                                        <textarea className="common-input" name='message' ref={messageRef} placeholder="Your Message" disabled={props.property_data?.dataStatuses === "Rent" && (!startDateRef.current?.value || !endDateRef.current?.value) ? true : false }></textarea>
                                     </div>
                                     <div className="col-12">
-                                        <button type="submit" className="btn btn-main w-100">Submit Now</button>
+                                        <button type="submit" className="btn btn-main w-100" onClick={sendAxiosRequest}>Submit Now</button>
                                     </div>
                                 </div>
                             </form>
-
-
-                        </div>  
+                        </div>
                     </div>
-                </div>  
-            </section>   
+                </div>
+            </section>
         </>
     );
 };

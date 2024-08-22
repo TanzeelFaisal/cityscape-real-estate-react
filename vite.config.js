@@ -1,7 +1,22 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  build: {
+    rollupOptions: {
+      external: [
+        'assets/js/bootstrap.bundle.min.js',
+        'assets/css/bootstrap.min.css',
+        'assets/css/fontawesome-all.min.css',
+        'assets/css/line-awesome.min.css'
+      ],
+      output: {
+        globals: {
+          'assets/js/bootstrap.bundle.min.js': 'bootstrap',
+          'assets/css/bootstrap.min.css': 'bootstrapCSS',
+          'assets/css/fontawesome-all.min.css': 'fontawesomeCSS',
+          'assets/css/line-awesome.min.css': 'lineAwesomeCSS'
+        }
+      }
+    }
+  }
+});

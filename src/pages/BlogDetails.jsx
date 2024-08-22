@@ -14,15 +14,16 @@ const BlogDetails = () => {
     
     return (
         <>
-            <PageTitle title="CityScape - Blog Details" />
+            <PageTitle title="Anila Apartments - Blog Details" />
 
             {/* Header */}
+            {/* Header */}
             <Header 
-                headerClass="dark-header has-border" 
-                logoBlack={false}
-                logoWhite={true}
+                headerClass="" 
+                logoBlack={true}
+                logoWhite={false}
                 headerMenusClass="mx-auto"
-                btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
+                btnClass="btn btn-outline-main btn-outline-main-light d-lg-block d-none"
                 btnLink="/add-new-listing"
                 btnText="Add Listing"
                 spanClass="icon-right text-gradient" 
@@ -33,10 +34,10 @@ const BlogDetails = () => {
             />
 
             {/* BreadCrumb */}
-            <Breadcrumb 
+            {/* <Breadcrumb 
                 pageTitle="Blog Details"
                 pageName={location.state.title}
-            />
+            /> */}
 
             <BlogDetailsSection/>
 

@@ -17,21 +17,21 @@ const HomeFive = () => {
             
             <main className="body-bg">
 
-                {/* Header */}
-                <Header 
-                    headerClass="" 
-                    logoBlack={true}
-                    logoWhite={false}
-                    headerMenusClass=""
-                    btnClass="btn btn-main  d-lg-block d-none"
-                    btnLink="/add-new-listing"
-                    btnText="Add Listing"
-                    spanClass="icon-right" 
-                    showHeaderBtn={false}
-                    showOffCanvasBtn={true}
-                    offCanvasBtnClass=""
-                    showContactNumber={true}
-                />
+{/* Header */}
+<Header 
+    headerClass="" 
+    logoBlack={true}
+    logoWhite={false}
+    headerMenusClass="mx-auto"
+    btnClass="btn btn-outline-main-light d-lg-block d-none"
+    btnLink=""
+    btnText=""
+    spanClass="icon-right text-gradient" 
+    showHeaderBtn={false}
+    showOffCanvasBtn={false}
+    offCanvasBtnClass=""
+    showContactNumber={false}
+/>
 
                 {/* Banner */}
                 <Banner/>

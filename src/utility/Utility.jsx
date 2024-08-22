@@ -9,6 +9,16 @@ export const slugURL = ({url, slug }) => {
     return `/${url}/${encodeURIComponent(convertToSlug(slug))}`;
 }
 
+// ================================ Pluralize Words ================================
+import pluralize from 'pluralize';
+
+export function toSingular(word) {
+  if (pluralize.isPlural(word)) {
+    return pluralize.singular(word);
+  }
+  return word;
+}
+
 
 // Get The Current Month Name
 export const getCurrentMonth = () => {

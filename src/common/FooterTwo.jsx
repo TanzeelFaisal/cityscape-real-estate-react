@@ -18,7 +18,7 @@ const FooterTwo = () => {
 
                                 <FooterLogoDesc/>
                                 
-                                <h6 className="footer-item__title mt-4 mt-lg-5">Lets Work Together</h6>
+                                <h6 className="footer-item__title mt-4 mt-lg-5"></h6>
                                 
                                 <FooterInfo/>
                                 
@@ -32,7 +32,7 @@ const FooterTwo = () => {
                         <div className="col-xl-3 col-sm-6">
                             <div className="footer-item">
                                 <h6 className="footer-item__title">Subscribe </h6>
-                                <p className="footer-item__desc">It is a long established fact that  reader will be Elite Property </p>
+                                
 
                                 <SubscribeBox/>
 

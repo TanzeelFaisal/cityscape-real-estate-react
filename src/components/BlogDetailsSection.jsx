@@ -24,7 +24,7 @@ const BlogDetailsSection = () => {
         <div className="blog-details-section padding-y-120">
             <div className="container container-two">
                 <div className="row gy-4">
-                    <div className="col-lg-8">
+                    <div className="col-lg-12">
                         <div className="blog-details">
                             <div className="blog-details__thumb">
                                 <img src={location.state.thumb} alt="" className='cover-img'/>
@@ -79,9 +79,9 @@ const BlogDetailsSection = () => {
                             
                         </div>
                     </div>
-                    <div className="col-lg-4">
+                    {/* <div className="col-lg-4">
                         <CommonSidebar renderSearch={true} renderProperties={false} renderTags={true}/>
-                    </div>  
+                    </div>   */}
                 </div>
             </div>
         </div>   

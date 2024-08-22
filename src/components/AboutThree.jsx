@@ -16,13 +16,7 @@ const AboutThree = () => {
                             <div className="about-three-thumb">
                                 <div className="about-three-thumb__inner">
                                     <img src={AboutThreeThumb} alt=""/>
-                                    <div className="project-content">
-                                        <div className="project-content__inner">
-                                            <h2 className="project-content__number">
-                                                <CountUp end={parseInt(10)} duration={6} delay={0.2} />k                                            </h2>
-                                            <span className="project-content__text font-12">Complete project</span>
-                                        </div>
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -33,9 +27,10 @@ const AboutThree = () => {
                                     headingClass="style-left"  
                                     subtitle="About Us"
                                     subtitleClass="bg-gray-100" 
-                                    title="Unlocking the door to your a the new home" 
+                                    title="Welcome to Anila Apartments, your premier destination for luxurious living and exceptional comfort in Shëngjin, Albania." 
                                     renderDesc={true}
-                                    desc="Real estate is a lucrative industry that involves the buying selling and renting of properties. It encompasses residential commercial and industrial properties Real estate agents play a crucial role in facilitating real estate"
+                                    desc="At Anila Apartments, we pride ourselves on providing a variety of rental and purchase options to meet your needs. Whether you're looking for a temporary getaway or a permanent residence, our properties are designed to exceed your expectations with their upscale furnishings, contemporary amenities, and inviting atmosphere. 
+                                    Located in the heart of Shëngjin, our properties offer easy access to the beach, local attractions, and a vibrant community. Whether you're here for a relaxing vacation or looking to make Shëngjin your home, Anila Apartments provides an unparalleled living experience."
                                     renderButton={false}
                                     buttonClass="btn-main"
                                     buttonText="View More"
@@ -54,13 +49,7 @@ const AboutThree = () => {
                                     }
                                 </ul>
                                 <div className="about-button">
-                                    <Button
-                                        btnLink="/about-us" 
-                                        btnClass="btn btn-outline-main bg-white" 
-                                        btnText="Learn More" 
-                                        spanClass="icon-right" 
-                                        iconClass="fas fa-arrow-right" 
-                                    />
+                              
                                 </div>
                             </div>
                         </div>

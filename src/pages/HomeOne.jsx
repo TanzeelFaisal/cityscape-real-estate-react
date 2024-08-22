@@ -3,12 +3,9 @@ import TopHeader from '../common/TopHeader';
 import Header from './../common/Header';
 import Banner from '../components/Banner';
 import About from '../components/About';
-import Property from '../components/Property';
 import PropertyType from '../components/PropertyType';
 import VideoPopup from '../components/VideoPopup';
 import Counter from './../components/Counter';
-import Portfolio from '../components/Portfolio';
-import Testimonial from './../components/Testimonial';
 import Blog from './../components/Blog';
 import FooterTwo from './../common/FooterTwo';
 import Message from './../components/Message';
@@ -19,7 +16,7 @@ import PageTitle from '../common/PageTitle';
 const HomeOne = () => {
     return (
         <>
-         <PageTitle title="CityScape - Home Page" />
+         <PageTitle title="Anila Apartments - Home Page" />
             <OffCanvas/>
             <MobileMenu/>
             
@@ -31,9 +28,9 @@ const HomeOne = () => {
                     logoBlack={true}
                     logoWhite={false}
                     headerMenusClass="mx-auto"
-                    btnClass="btn btn-outline-light d-lg-block d-none"
-                    btnLink="/property"
-                    btnText="Sell Property"
+                    btnClass="btn btn-outline-main-light d-lg-block d-none"
+                    btnLink=""
+                    btnText=""
                     spanClass="icon-right text-gradient" 
                     showHeaderBtn={false}
                     showOffCanvasBtn={false}
@@ -47,9 +44,6 @@ const HomeOne = () => {
                 {/* About */}
                 <About/>
 
-                {/* Property */}
-                {/* <Property/> */}
-
                 {/* Property Type */}
                 <PropertyType/>
 
@@ -61,12 +55,6 @@ const HomeOne = () => {
 
                 {/* Message */}
                 <Message/>
-
-                {/* Portfolio */}
-                {/* <Portfolio/> */}
-
-                {/* Testimonial */}
-                {/* <Testimonial/> */}
 
                 {/* Blog */}
                 <Blog/>

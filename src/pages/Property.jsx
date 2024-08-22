@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../common/Header';
-import Footer from '../common/Footer';
+import FooterTwo from '../common/FooterTwo';
 import Breadcrumb from '../common/Breadcrumb';
 import PropertyPageSection from '../components/PropertyPageSection';
 import Cta from '../components/Cta';
@@ -9,21 +9,22 @@ import PageTitle from '../common/PageTitle';
 const Property = () => {
     return (
         <>
-        <PageTitle title="CityScape - Property" />
+        <PageTitle title="Anila Apartments - Property" />
 
         <main className="body-bg">
             
             {/* Header */}
+            {/* Header */}
             <Header 
-                headerClass="dark-header has-border" 
-                logoBlack={false}
-                logoWhite={true}
+                headerClass="" 
+                logoBlack={true}
+                logoWhite={false}
                 headerMenusClass="mx-auto"
-                btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
+                btnClass="btn btn-outline-main btn-outline-main-light d-lg-block d-none"
                 btnLink="/add-new-listing"
                 btnText="Add Listing"
                 spanClass="icon-right text-gradient" 
-                showHeaderBtn={true}
+                showHeaderBtn={false}
                 showOffCanvasBtn={false}
                 offCanvasBtnClass=""
                 showContactNumber={false}
@@ -42,7 +43,7 @@ const Property = () => {
             <Cta ctaClass=""/>
 
             {/* Footer */}
-            <Footer/>
+            <FooterTwo/>
 
         </main>   
         </>

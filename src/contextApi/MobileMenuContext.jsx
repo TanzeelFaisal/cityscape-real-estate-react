@@ -1,22 +1,25 @@
 import React, { createContext, useState } from 'react';
 
-export const MobileMenuContext = createContext(); 
+export const MobileMenuContext = createContext();
 
 const MobileMenuProvider = ({ children }) => {
-        
-    const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const handleMobileMenuClick = () => {
-        setToggleMobileMenu(!toggleMobileMenu)
-    }
-    
+        console.log('Mobile menu toggled', isMobileMenuOpen);
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
     const handleMobileMenuClose = () => {
-        setToggleMobileMenu(false)
-    }
-    
+        console.log('Mobile menu closed');
+        setIsMobileMenuOpen(false);
+    };
+
+    console.log({ isMobileMenuOpen, handleMobileMenuClick, handleMobileMenuClose });
+
     return (
-        <MobileMenuContext.Provider value={{ toggleMobileMenu, handleMobileMenuClick, handleMobileMenuClose }}>
-            { children }
+        <MobileMenuContext.Provider value={{ isMobileMenuOpen, handleMobileMenuClick, handleMobileMenuClose }}>
+            {children}
         </MobileMenuContext.Provider>
     );
 };

@@ -19,7 +19,7 @@ const Message = () => {
                         </div>
                         <div className="col-lg-7">
                             <div className="form-box">
-                                <h2 className="form-box__title">Get A Quote </h2>
+                                <h2 className="form-box__title">Get in Touch! </h2>
                                 
                                 <ValidationForm 
                                     colClass="col-sm-6 col-xs-6" 

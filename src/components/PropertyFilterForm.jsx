@@ -28,11 +28,11 @@ const PropertyFilterForm = () => {
                         <div className="select-has-icon">
                             <select className="form-select common-input common-input--withLeftIcon pill text-gray-800" onChange={handleDataTypeChange} value={dataType}>
                                 <option value="Type" disabled defaultValue>Type</option>
-                                <option value="All">All</option>
-                                <option value="Houses">Houses</option>
+                               <option value="All">All</option>
                                 <option value="Apartments">Apartments</option>
-                                <option value="Office">Office</option>
-                                <option value="Villa">Villa</option>
+                                <option value="Suite">Suite</option>
+                                {/* <option value="Office">Office</option>
+                                <option value="Villa">Villa</option> */}
                             </select>
                             <span className="input-icon input-icon--left text-gradient">
                                 <img src="assets/images/icons/type.svg" alt=""/>
@@ -43,14 +43,14 @@ const PropertyFilterForm = () => {
                         <div className="select-has-icon">
                             <select className="form-select common-input common-input--withLeftIcon pill text-gray-800" onChange={handleDataLocationChange} value={dataLocation}>
                                 <option value="Location" disabled defaultValue>Location</option>
-                                <option value="All"> Country</option>
+                                <option value="All" data-location="Shëngjin, Albania">Shëngjin, Albania</option>
                                 {/* <option value="Bangladesh" data-location="Bangladesh">Bangladesh</option>
                                 <option value="Japan" data-location="Japan">Japan</option>
                                 <option value="Korea" data-location="Korea">Korea</option>
                                 <option value="Singapore" data-location="Singapore">Singapore</option>
                                 <option value="Germany" data-location="Germany">Germany</option>
                                 <option value="Thailand" data-location="Thailand">Thailand</option> */}
-                                <option value="Shengjin" data-location="Shengjin">Shëngjin, Albania</option>
+                                
                             </select>
                             <span className="input-icon input-icon--left text-gradient">
                                 <img src="assets/images/icons/location.svg" alt=""/>

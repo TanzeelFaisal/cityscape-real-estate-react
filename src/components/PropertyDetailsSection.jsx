@@ -108,7 +108,7 @@ const PropertyDetailsSection = () => {
                                         }
                                     </div>
                                     <div className="address-map">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1150112.1628856962!2d44.64619029447154!3d23.086651461779507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sbd!4v1707037970965!5m2!1sen!2sbd" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d11898.188215250402!2d19.599646!3d41.7949743!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDQ3JzQwLjMiTiAxOcKwMzYnMTUuOCJF!5e0!3m2!1sen!2s!4v1722459118460!5m2!1sen!2s"></iframe>
                                     </div>
                                 </div>
                             </div>

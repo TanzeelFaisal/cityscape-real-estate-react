@@ -6,13 +6,17 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
     "formik": "^2.4.5",
+    "pluralize": "^8.0.0",
     "react": "^18.2.0",
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",

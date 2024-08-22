@@ -24,17 +24,10 @@ export const offCanvasInfos = [
 // Social List
 export const socialLists = [
     {
-        link: 'https://www.facebook.com',
+        link: 'https://www.facebook.com/profile.php?id=61563443941028',
         icon: <i className="fab fa-facebook-f"></i>
     },
-    {
-        link: 'https://www.twitter.com',
-        icon: <i className="fab fa-twitter"></i>
-    },
-    {
-        link: 'https://www.linkedin.com',
-        icon: <i className="fab fa-linkedin-in"></i>
-    },
+  
     {
         link: 'https://www.pinterest.com',
         icon: <i className="fab fa-instagram"></i>
@@ -102,7 +95,7 @@ export const navMenus = [
     //   ],
     },
     {
-        text: "Property",
+        text: "Apartments",
         path: "/property",
     },
     // {
@@ -151,10 +144,10 @@ export const navMenus = [
     //   text: "Project",
     //   path: "/project",
     // },
-    {
-      text: "Blog",
-      path: "/blog"
-    },
+      //{
+      //  text: "Blog",
+      //  path: "/blog"
+     // },
     {
         text: "About Us",
         path: "/about-us",
@@ -172,59 +165,37 @@ export const footerInfos = [
     {
         icon: <i className="fas fa-map-marker-alt"></i>,
         text: 'Address',
-        address: '66 Broklyant, New York India'
+        address: 'Shëngjin, Albania'
     },
     {
         icon: <i className="fas fa-phone"></i>,
         text: 'Phone Number',
-        address: '012 345 678 9101'
+        address: '+383 44 530 007'
     }
 ]
 
 export const footerServiceLinks = [ 
     {
-        text: 'Reliable Rentals',
+        text: 'Home',
+        link: '/home'
+    },
+    {
+        text: 'Apartment',
         link: '/property'
     },
     {
-        text: 'Golden Key Properties',
-        link: '/property'
-    },
-    {
-        text: 'Swift Home Sales',
-        link: '/property'
-    },
-    {
-        text: 'Elite Realty Services',
-        link: '/property'
-    },
-    {
-        text: 'Dream Property Solutions',
-        link: '/property'
-    },
-]
-
-export const footerUsefulLinks = [ 
-    {
-        text: 'Blog',
-        link: '/blog'
-    },
-    {
-        text: 'FAQ',
-        link: '/faq'
-    },
-    {
-        text: 'Property',
-        link: '/property'
-    },
-    {
-        text: 'About Us',
+        text: 'About us',
         link: '/about-us'
     },
     {
         text: 'Contact',
         link: '/contact'
     },
+   
+]
+
+export const footerUsefulLinks = [ 
+
 ]
 
 import FooterGallery1 from '../../../public/assets/images/thumbs/gallery1.png'; 
@@ -267,18 +238,7 @@ export const footerGallery = [
 ]
 
 export const BottomFooterLink = [
-    {
-        text: 'Terms & Condition',
-        link: '/contact'
-    },
-    {
-        text: 'Privacy Policy',
-        link: '/contact'
-    },
-    {
-        text: 'Contact Us',
-        link: '/contact'
-    },
+
 ]
 
 

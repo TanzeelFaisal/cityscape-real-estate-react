@@ -33,9 +33,9 @@ const About = () => {
 
                                 <SectionHeading 
                                     headingClass="style-left"  
-                                    subtitle="About Us"
+                                    subtitle="About us"
                                     subtitleClass="" 
-                                    title="Stay with us feel at home Your perfect stay awaits" 
+                                    title="Feel at home, the perfect stay awaits you!"
                                     renderDesc={false}
                                     desc=""
                                     renderButton={false}
@@ -43,20 +43,12 @@ const About = () => {
                                     buttonText="View More"
                                 />
                                 
-                                <div className="about-box d-flex">
-                                    <div className="about-box__icon">
-                                        <img src={aboutContent.icon} alt="" />
-                                    </div>
-                                    <div className="about-box__content">
-                                        <h6 className="about-box__title">{aboutContent.title}</h6>
-                                        <p className="about-box__desc font-13">{aboutContent.desc}</p>
-                                    </div>
-                                </div>
+                                
                                 <div className="about-button">
                                     <Button 
                                         btnLink="/about-us" 
                                         btnClass="btn-main" 
-                                        btnText="Learn More" 
+                                        btnText="View More" 
                                         spanClass="icon-right" 
                                         iconClass="fas fa-arrow-right" 
                                     />

@@ -15,19 +15,19 @@ export const bannerThreeContent = {
 export const aboutCheckLists = [
     {
         icon: <i className="fas fa-check"></i>,
-        text: 'Dream Property Solutions'
+        text: 'Prime Location'
     },
     {
         icon: <i className="fas fa-check"></i>,
-        text: ' Prestige Property Management'
+        text: ' Luxurious Living'
     },
     {
         icon: <i className="fas fa-check"></i>,
-        text: 'Secure Property Partners'
+        text: 'Diverse Options'
     },
     {
         icon: <i className="fas fa-check"></i>,
-        text: 'Global Real Estate Investments'
+        text: 'Exceptional Service'
     },
 ]
 

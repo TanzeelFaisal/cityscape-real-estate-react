@@ -85,7 +85,7 @@ const Filter = (props) => {
                                     <option value="Singapore" data-location="Singapore">Singapore</option>
                                     <option value="Germany" data-location="Germany">Germany</option>
                                     <option value="Thailand" data-location="Thailand">Thailand</option> */}
-                                    <option value="Shengjin" data-location="Shengjin">Shëngjin, Albania</option>
+                                    <option value="Shengjin" data-location="Shëngjin, Albania">Shëngjin, Albania</option>
                                 </select>
                             </div>
                         </div>

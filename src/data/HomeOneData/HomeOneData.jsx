@@ -3,10 +3,10 @@ import React from 'react';
 // Banner One
 import BannerImg from '../../../public/assets/images/thumbs/banner-img.png'; 
 export const bannerContent = {
-    subtitle: 'FinTech Fusion',
-    title: 'Invest today in You ',
-    gradientTitle: 'Dream Home',
-    desc: 'Unlock the Power of Real Estate Making Your Real Estate Dreams a Reality Real Estate here Unlock the Power of Real Estate',
+    subtitle: 'Anila Apartments',
+    title: 'Apartments in ',
+    gradientTitle: 'Shëngjin, Albania',
+    desc: 'Experience the charm of Shëngjin with a stay in our beautiful apartments.',
     thumb: BannerImg
 }
 
@@ -30,8 +30,8 @@ export const filterTabs = [
 // About One Content
 export const aboutStatistics = {
     icon: <i className="fas fa-users text-gradient"></i>,
-    number: '4000+',
-    text: 'Satisfied Clients'
+    number: '15+',
+    text: 'Apartments'
 }
 import aboutContentThumb from '../../../public/assets/images/thumbs/about-img.png'; 
 import aboutContentIcon from '../../../public/assets/images/icons/about-icon.svg'; 
@@ -56,16 +56,21 @@ import propertyThumb9 from '../../../public/assets/images/thumbs/property-9.png'
 import propertyThumb10 from '../../../public/assets/images/thumbs/property-10.png'; 
 import propertyThumb11 from '../../../public/assets/images/thumbs/property-11.png'; 
 import propertyThumb12 from '../../../public/assets/images/thumbs/property-12.png'; 
+import propertyThumb13 from '../../../public/assets/images/thumbs/property-13.png'; 
+import propertyThumb14 from '../../../public/assets/images/thumbs/property-14.png'; 
+import propertyThumb15 from '../../../public/assets/images/thumbs/property-15.png'; 
 export const properties = [
+
+    
     {
-        id: 1,
-        thumb: propertyThumb1,
-        price: '$300.00',
-        day: '/per day',
-        title: 'Turning Dreams into Addresses Home State ',
-        desc: 'Real Estate is a vast industry that deals with the buying, selling, and renting of properties. It inv transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
+        id: 14,
+        thumb: propertyThumb14,
+        price: '270€',
+        day: '/per night',
+        title: 'Suite - Flora ',    
+        desc: '',
         locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '66 Broklyant, New York America',
+        location: 'Shëngjin, Albania',
         amenities: [
             {
                 icon: <i className="fas fa-bed"></i>,
@@ -77,286 +82,339 @@ export const properties = [
             }
         ],
         btnText: 'Book Now',
-        dataSort: 'Newest',
-        dataStatuses: 'Sell',
-        dataTypes: 'Houses',
-        dataLocations: "Bangladesh",
+        dataSort: 'Best Seller',
+        dataStatuses: 'Rent',
+        dataTypes: 'Suite',
+        dataLocations: "Shëngjin, Albania",
+    },
+    {
+        id: 15,
+        thumb: propertyThumb15,
+        price: '200€',
+        day: '/per night',
+        title: 'Suite - Vjosa ',    
+        desc: '',
+        locationIcon: <i className="fas fa-map-marker-alt"></i>,
+        location: 'Shëngjin, Albania',
+        amenities: [
+            {
+                icon: <i className="fas fa-bed"></i>,
+                text: '1 Beds',
+            },
+            {
+                icon: <i className="fas fa-bath"></i>,
+                text: ' 1 Baths ',
+            }
+        ],
+        btnText: 'Book Now',
+        dataSort: 'Best Seller',
+        dataStatuses: 'Rent',
+        dataTypes: 'Suite',
+        dataLocations: "Shëngjin, Albania",
+    },
+
+    {
+        id: 13,
+        thumb: propertyThumb13,
+        price: '190€',
+        day: '/per night',
+        title: 'Suite - Anila ',    
+        desc: '',
+        locationIcon: <i className="fas fa-map-marker-alt"></i>,
+        location: 'Shëngjin, Albania',
+        amenities: [
+            {
+                icon: <i className="fas fa-bed"></i>,
+                text: '1 Beds',
+            },
+            {
+                icon: <i className="fas fa-bath"></i>,
+                text: ' 1 Baths ',
+            }
+        ],
+        btnText: 'Book Now',
+        dataSort: 'Best Seller',
+        dataStatuses: 'Rent',
+        dataTypes: 'Suite',
+        dataLocations: "Shëngjin, Albania",
+    },
+    
+    {
+        id: 1,
+        thumb: propertyThumb1,
+        price: '120€',
+        day: '/per night',
+        title: 'Apartment Nina',
+        desc: '',
+        locationIcon: <i className="fas fa-map-marker-alt"></i>,
+        location: 'Shëngjin, Albania',
+        amenities: [
+            {
+                icon: <i className="fas fa-bed"></i>,
+                text: '1 Beds',
+            },
+            {
+                icon: <i className="fas fa-bath"></i>,
+                text: ' 1 Baths ',
+            }
+        ],
+        btnText: 'Book Now',
+        dataSort: 'Best Seller',
+        dataStatuses: 'Rent',
+        dataTypes: 'Apartments',
+        dataLocations: "Shëngjin, Albania",
     },
     {
         id: 2,
         thumb: propertyThumb2,
-        price: '$450.00',
-        day: '/per day',
-        title: 'Your journey home ownership starts here too ',
-        desc: 'Real Estate is a vast industry that deals with the buying, selling, and renting of properties. It inv transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
+        price: '120€',
+        day: '/per night',
+        title: 'Apartment - Rosa ',
+        desc: ' ',
         locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '66 Broklyant, New York America',
+        location: 'Shëngjin, Albania',
         amenities: [
             {
                 icon: <i className="fas fa-bed"></i>,
-                text: '4 Beds',
+                text: '1 Beds',
             },
             {
                 icon: <i className="fas fa-bath"></i>,
-                text: ' 2 Baths ',
+                text: ' 1 Baths ',
             }
         ],
         btnText: 'Book Now',
         dataSort: 'Best Seller',
-        dataStatuses: 'Buy',
+        dataStatuses: 'Rent',
         dataTypes: 'Apartments',
-        dataLocations: "Japan",
+        dataLocations: "Shëngjin, Albania",
     },
     {
         id: 3,
         thumb: propertyThumb3,
-        price: '$500.00',
-        day: '/per day',
-        title: 'Opening Doors to Your Dreams For Living ',
-        desc: 'Real Estate is a vast industry that deals with the buying, selling, and renting of properties. It inv transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
+        price: '120€',
+        day: '/per night',
+        title: 'Apartment - Margarita ',
+        desc: '',
         locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '66 Broklyant, New York America',
+        location: 'Shëngjin, Albania',
         amenities: [
             {
                 icon: <i className="fas fa-bed"></i>,
-                text: '4 Beds',
+                text: '1 Beds',
             },
             {
                 icon: <i className="fas fa-bath"></i>,
-                text: ' 3 Baths ',
-            }
-        ],
-        btnText: 'Book Now',
-        dataSort: 'Best Match',
-        dataStatuses: 'Rent',
-        dataTypes: 'Office',
-        dataLocations: "Korea",
-    },
-    {
-        id: 4,
-        thumb: propertyThumb4,
-        price: '$600.00',
-        day: '/per day',
-        title: 'Home is Where Your Story Begins ',
-        desc: 'Real Estate is a vast industry that deals with the buying, selling, and renting of properties. It inv transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
-        locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '66 Broklyant, New York America',
-        amenities: [
-            {
-                icon: <i className="fas fa-bed"></i>,
-                text: '5 Beds',
-            },
-            {
-                icon: <i className="fas fa-bath"></i>,
-                text: ' 4 Baths ',
-            }
-        ],
-        btnText: 'Book Now',
-        dataSort: 'Low Price',
-        dataStatuses: 'Sell',
-        dataTypes: 'Villa',
-        dataLocations: "Singapore",
-    },
-    {
-        id: 5,
-        thumb: propertyThumb5,
-        price: '$650.00',
-        day: '/per day',
-        title: 'Building Trust, One Home at a Time',
-        desc: 'Real Estate is a vast industry that deals with the buying, selling, and renting of properties. It inv transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
-        locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '66 Broklyant, New York America',
-        amenities: [
-            {
-                icon: <i className="fas fa-bed"></i>,
-                text: '6 Beds',
-            },
-            {
-                icon: <i className="fas fa-bath"></i>,
-                text: ' 4 Baths ',
-            }
-        ],
-        btnText: 'Book Now',
-        dataSort: 'High Price',
-        dataStatuses: 'Buy',
-        dataTypes: 'Houses',
-        dataLocations: "Germany",
-    },
-    {
-        id: 6,
-        thumb: propertyThumb6,
-        price: '$700.00',
-        day: '/per day',
-        title: 'Brick by Brick Your Dream Home Awaits ',
-        desc: 'Real Estate is a vast industry that deals with the buying, selling, and renting of properties. It inv transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
-        locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '66 Broklyant, New York America',
-        amenities: [
-            {
-                icon: <i className="fas fa-bed"></i>,
-                text: '7 Beds',
-            },
-            {
-                icon: <i className="fas fa-bath"></i>,
-                text: ' 3 Baths ',
-            }
-        ],
-        btnText: 'Book Now',
-        dataSort: 'Medium Price',
-        dataStatuses: 'Rent',
-        dataTypes: 'Apartments',
-        dataLocations: "Thailand",
-    },
-    {
-        id: 7,
-        thumb: propertyThumb7,
-        price: '$350.00',
-        day: '/per day',
-        title: 'Guiding You Home with Experience',
-        desc: 'Real Estate is a vast industry that deals with the buying, selling, and renting of properties. It inv transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
-        locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '66 Broklyant, New York America',
-        amenities: [
-            {
-                icon: <i className="fas fa-bed"></i>,
-                text: '7 Beds',
-            },
-            {
-                icon: <i className="fas fa-bath"></i>,
-                text: ' 3 Baths ',
+                text: ' 1 Baths ',
             }
         ],
         btnText: 'Book Now',
         dataSort: 'Best Seller',
-        dataStatuses: 'Sell',
-        dataTypes: 'Office',
-        dataLocations: "Bangladesh",
+        dataStatuses: 'Rent',
+        dataTypes: 'Apartments',
+        dataLocations: "Shëngjin, Albania",
+    },
+    {
+        id: 4,
+        thumb: propertyThumb4,
+        price: '120€',
+        day: '/per night',
+        title: 'Apartment - Billy ',
+        desc: '',
+        locationIcon: <i className="fas fa-map-marker-alt"></i>,
+        location: 'Shëngjin, Albania',
+        amenities: [
+            {
+                icon: <i className="fas fa-bed"></i>,
+                text: '1 Beds',
+            },
+            {
+                icon: <i className="fas fa-bath"></i>,
+                text: ' 1 Baths ',
+            }
+        ],
+        btnText: 'Book Now',
+        dataSort: 'Best Seller',
+        dataStatuses: 'Rent',
+        dataTypes: 'Apartments',
+        dataLocations: "Shëngjin, Albania",
+    },
+    {
+        id: 5,
+        thumb: propertyThumb5,
+        price: '135€',
+        day: '/per night',
+        title: 'Apartment - Irisë ',
+        desc: '',
+        locationIcon: <i className="fas fa-map-marker-alt"></i>,
+        location: 'Shëngjin, Albania',
+        amenities: [
+            {
+                icon: <i className="fas fa-bed"></i>,
+                text: '1 Beds',
+            },
+            {
+                icon: <i className="fas fa-bath"></i>,
+                text: ' 1 Baths ',
+            }
+        ],
+        btnText: 'Book Now',
+        dataSort: 'Best Seller',
+        dataStatuses: 'Rent',
+        dataTypes: 'Apartments',
+        dataLocations: "Shëngjin, Albania",
+    },
+    {
+        id: 6,
+        thumb: propertyThumb6,
+        price: '135€',
+        day: '/per night',
+        title: 'Apartment - Illyria ',
+        desc: '',
+        locationIcon: <i className="fas fa-map-marker-alt"></i>,
+        location: 'Shëngjin, Albania',
+        amenities: [
+            {
+                icon: <i className="fas fa-bed"></i>,
+                text: '1 Beds',
+            },
+            {
+                icon: <i className="fas fa-bath"></i>,
+                text: ' 1 Baths ',
+            }
+        ],
+        btnText: 'Book Now',
+        dataSort: 'Best Seller',
+        dataStatuses: 'Rent',
+        dataTypes: 'Apartments',
+        dataLocations: "Shëngjin, Albania",
+    },
+    {
+        id: 7,
+        thumb: propertyThumb7,
+        price: '135€',
+        day: '/per night',
+        title: 'Apartment - Margarite ',
+        desc: '',
+        locationIcon: <i className="fas fa-map-marker-alt"></i>,
+        location: 'Shëngjin, Albania',
+        amenities: [
+            {
+                icon: <i className="fas fa-bed"></i>,
+                text: '1 Beds',
+            },
+            {
+                icon: <i className="fas fa-bath"></i>,
+                text: ' 1 Baths ',
+            }
+        ],
+        btnText: 'Book Now',
+        dataSort: 'Best Seller',
+        dataStatuses: 'Rent',
+        dataTypes: 'Apartments',
+        dataLocations: "Shëngjin, Albania",
     },
     {
         id: 8,
         thumb: propertyThumb8,
-        price: '$530.00',
-        day: '/per day',
-        title: 'A Tradition of Trust in Real Estate ',
-        desc: 'Real Estate is a vast industry that deals with the buying, selling, and renting of properties. It inv transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
+        price: '135€',
+        day: '/per night',
+        title: 'Apartment - Tukpam ',
+        desc: '',
         locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '66 Broklyant, New York America',
+        location: 'Shëngjin, Albania',
         amenities: [
             {
                 icon: <i className="fas fa-bed"></i>,
-                text: '7 Beds',
+                text: '1 Beds',
             },
             {
                 icon: <i className="fas fa-bath"></i>,
-                text: ' 3 Baths ',
+                text: ' 1 Baths ',
             }
         ],
         btnText: 'Book Now',
-        dataSort: 'Best Match',
-        dataStatuses: 'Buy',
-        dataTypes: 'Villa',
-        dataLocations: "Japan",
+        dataSort: 'Best Seller',
+        dataStatuses: 'Rent',
+        dataTypes: 'Apartments',
+        dataLocations: "Shëngjin, Albania",
     },
     {
         id: 9,
         thumb: propertyThumb9,
-        price: '$560.00',
-        day: '/per day',
-        title: 'Target Audience and Reflect the Values',
-        desc: 'Real Estate is a vast industry that deals with the buying, selling, and renting of properties. It inv transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
+        price: '135€',
+        day: '/per night',
+        title: 'Apartment - Kleoparta ',
+        desc: '',
         locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '66 Broklyant, New York America',
+        location: 'Shëngjin, Albania',
         amenities: [
             {
                 icon: <i className="fas fa-bed"></i>,
-                text: '7 Beds',
+                text: '1 Beds',
             },
             {
                 icon: <i className="fas fa-bath"></i>,
-                text: ' 3 Baths ',
+                text: ' 1 Baths ',
             }
         ],
         btnText: 'Book Now',
-        dataSort: 'Low Price',
+        dataSort: 'Best Seller',
         dataStatuses: 'Rent',
-        dataTypes: 'Houses',
-        dataLocations: "Korea",
+        dataTypes: 'Apartments',
+        dataLocations: "Shëngjin, Albania",
     },
     {
         id: 10,
         thumb: propertyThumb10,
-        price: '$680.00',
-        day: '/per day',
-        title: 'Making House Hunting an Adventure ',
-        desc: 'Real Estate is a vast industry that deals with the buying, selling, and renting of properties. It inv transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
+        price: '135€',
+        day: '/per night',
+        title: 'Apartment - Masha ',
+        desc: '',
         locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '66 Broklyant, New York America',
+        location: 'Shëngjin, Albania',
         amenities: [
             {
                 icon: <i className="fas fa-bed"></i>,
-                text: '7 Beds',
+                text: '1 Beds',
             },
             {
                 icon: <i className="fas fa-bath"></i>,
-                text: ' 3 Baths ',
+                text: ' 1 Baths ',
             }
         ],
         btnText: 'Book Now',
-        dataSort: 'High Price',
-        dataStatuses: 'Sell',
+        dataSort: 'Best Seller',
+        dataStatuses: 'Rent',
         dataTypes: 'Apartments',
-        dataLocations: "Singapore",
+        dataLocations: "Shëngjin, Albania",
     },
     {
         id: 11,
         thumb: propertyThumb11,
-        price: '$580.00',
-        day: '/per day',
-        title: 'Opening New Doors to Your Future ',
-        desc: 'Real Estate is a vast industry that deals with the buying, selling, and renting of properties. It inv transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
+        price: '120€',
+        day: '/per night',
+        title: 'Apartment - Feti ',
+        desc: '',
         locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '66 Broklyant, New York America',
+        location: 'Shëngjin, Albania',
         amenities: [
             {
                 icon: <i className="fas fa-bed"></i>,
-                text: '7 Beds',
+                text: '1 Beds',
             },
             {
                 icon: <i className="fas fa-bath"></i>,
-                text: ' 3 Baths ',
+                text: ' 1 Baths ',
             }
         ],
         btnText: 'Book Now',
-        dataSort: 'Newest',
-        dataStatuses: 'Buy',
-        dataTypes: 'Office',
-        dataLocations: "Germany",
-    },
-    {
-        id: 12,
-        thumb: propertyThumb12,
-        price: '$563.00',
-        day: '/per day',
-        title: 'Your Journey to Home Starts Here ',
-        desc: 'Real Estate is a vast industry that deals with the buying, selling, and renting of properties. It inv transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
-        locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '66 Broklyant, New York America',
-        amenities: [
-            {
-                icon: <i className="fas fa-bed"></i>,
-                text: '7 Beds',
-            },
-            {
-                icon: <i className="fas fa-bath"></i>,
-                text: ' 3 Baths ',
-            }
-        ],
-        btnText: 'Book Now',
-        dataSort: 'Best Seller',    
+        dataSort: 'Best Seller',
         dataStatuses: 'Rent',
-        dataTypes: 'Villa',
-        dataLocations: "Thailand",
+        dataTypes: 'Apartments',
+        dataLocations: "Shëngjin, Albania",
     },
+    
 ]
 
 
@@ -367,40 +425,25 @@ import propertyTypeIcon3 from '../../../public/assets/images/icons/property-type
 export const propertyTypes = [ 
     {
         icon: propertyTypeIcon1,
-        title: 'Seamless Solutions Your Success ',
-        desc: 'Customer satisfaction is crucial for amohlodi business as it leads to customer loyalty loves positive word'
+        title: 'Apartment for buy ',
+        
     },
     {
         icon: propertyTypeIcon2,
-        title: 'Proactive Realty Services ',
-        desc: 'Customer satisfaction is crucial for amohlodi business as it leads to customer loyalty loves positive word'
+        title: 'Apartment for rent  ',
+       
     },
     {
         icon: propertyTypeIcon3,
-        title: 'Supreme Home Finders',
-        desc: 'Customer satisfaction is crucial for amohlodi business as it leads to customer loyalty loves positive word'
+        title: 'Suite',
+       
     },
 ]
 
 
 // CountUp Data
 export const counts = [ 
-    {
-        number: '200',
-        text: 'HAPPY PATIENTS'
-    },
-    {
-        number: '20',
-        text: 'SAVED HEARTS '
-    },
-    {
-        number: '10k',
-        text: 'EXPERT DOCTORS'
-    },
-    {
-        number: '900',
-        text: 'SERENITY WORK '
-    },
+  
 ]
 
 

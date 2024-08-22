@@ -10,7 +10,7 @@ const BlogClassicSection = () => {
             <div className="blog-classic padding-y-120">
                 <div className="container container-two">
                     <div className="row gy-4">
-                        <div className="col-lg-8">
+                        <div className="col-lg-12">
                             {
                                 blogs.map((blogItem, blogItemIndex) => {
                                     return (
@@ -20,9 +20,9 @@ const BlogClassicSection = () => {
                             }
                             <Pagination/>
                         </div>
-                        <div className="col-lg-4">
+                        {/* <div className="col-lg-4">
                             <CommonSidebar renderSearch={true} renderProperties={false} renderTags={true}/>
-                        </div>  
+                        </div>   */}
                     </div>
                 </div>
             </div>   

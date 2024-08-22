@@ -10,25 +10,24 @@ import PageTitle from '../common/PageTitle';
 
 const PropertyDetails = () => {
 
-    const {title} = useParams();
-    const {dataStatuses} = useLocation().state;
-    console.log(dataStatuses)
+    const property_data = useLocation().state;
     
     return (
         <>
-        <PageTitle title="CityScape - Property Details" />
+        <PageTitle title="Anila Apartments - Property Details" />
 
             {/* Header */}
+            {/* Header */}
             <Header 
-                headerClass="dark-header has-border" 
-                logoBlack={false}
-                logoWhite={true}
+                headerClass="" 
+                logoBlack={true}
+                logoWhite={false}
                 headerMenusClass="mx-auto"
-                btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
+                btnClass="btn btn-outline-main btn-outline-main-light d-lg-block d-none"
                 btnLink="/add-new-listing"
                 btnText="Add Listing"
                 spanClass="icon-right text-gradient" 
-                showHeaderBtn={true}
+                showHeaderBtn={false}
                 showOffCanvasBtn={false}
                 offCanvasBtnClass=""
                 showContactNumber={false}
@@ -44,7 +43,7 @@ const PropertyDetails = () => {
             <PropertyDetailsSection/>
 
             {/* Contact */}
-            <ContactUsSection dataStatuses={dataStatuses}/>
+            <ContactUsSection property_data={property_data}/>
 
             {/* Cta */}
             <Cta ctaClass=""/>
